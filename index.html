@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bucin Melayang</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: url('https://files.catbox.moe/bm5k42.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Great Vibes', cursive;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+      padding: 30px;
+      text-align: center;
+      max-width: 350px;
+      z-index: 1;
+    }
+
+    .glass-card img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 20px;
+    }
+
+    .glass-card h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .glass-card p {
+      font-size: 1.3em;
+      line-height: 1.5;
+    }
+
+    /* Hati melayang */
+    .heart {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center;
+      background-size: contain;
+      opacity: 0.7;
+      animation: float 6s infinite linear;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.2);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glass-card">
+    <img src="https://files.catbox.moe/33ga4i.jpg" alt="Foto Pasangan">
+    <h1>My Love 💕</h1>
+    <p>Kamu seperti hujan hati... turun terus ke hatiku tiap hari 🌧️❤️</p>
+  </div>
+
+  <!-- Hati-hati melayang -->
+  <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
+  <div class="heart" style="left: 20%; animation-delay: 1s;"></div>
+  <div class="heart" style="left: 35%; animation-delay: 2s;"></div>
+  <div class="heart" style="left: 50%; animation-delay: 0.5s;"></div>
+  <div class="heart" style="left: 65%; animation-delay: 1.5s;"></div>
+  <div class="heart" style="left: 80%; animation-delay: 0.3s;"></div>
+  <div class="heart" style="left: 90%; animation-delay: 1.2s;"></div>
+
+</body>
+</html>
